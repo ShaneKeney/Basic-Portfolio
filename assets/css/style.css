@@ -1,11 +1,34 @@
+html {
+    height: 100%;
+}
+
 body {
     background-image: url('../images/herringbone.png');
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    justify-content: center;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    flex: 1 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sticky-footer {
+    height: 75px;
+    width: 100%;
+    border-top: 8px solid #4aaaa5;
+    background-color: #666666;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 #header-container {
@@ -17,7 +40,7 @@ body {
     align-items: center;
     display: flex;
     border-width: 0 0 2px 0;
-    border-color: #dddddd; /* Change this color at end to proper color */
+    border-color: #cccccc; /* Change this color at end to proper color */
     border-style: solid;
 }
 
@@ -66,7 +89,7 @@ body {
 }
 
 .nav-links {
-    color: #999999; /* Change this color at end to proper color */
+    color: #777777; /* Change this color at end to proper color */
     padding: 5px 20px 5px 20px;
     font-size: 18px;
     font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
@@ -74,6 +97,11 @@ body {
     border-right-color: #dddddd; /* Change this color at end to proper color */
     border-style: solid;
     border-width: 0 1px 0 0;
+}
+
+.nav-links:hover {
+    background-color: #4aaaa5;
+    color: white;
 }
 
 #about-me-container {
@@ -124,7 +152,13 @@ body {
     line-height: 30px;
     width: 100%;
     margin: 0;
-    color: #999999;
+    color: #777777;
     font-size: 18px;
     font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+}
+
+.copyright-text {
+    color: white;
+    font-size: 12px;
+    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';;
 }
