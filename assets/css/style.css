@@ -3,24 +3,24 @@ html {
 }
 
 body {
-    /* background-image: url('../images/herringbone.png'); */
+    background-image: url('../images/herringbone.png');
     margin: 0;
     padding: 0;
-    position: relative;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .content {
-    /* flex: 1 0 auto; */
+    flex: 1 0 auto;
     width: 100%;
-    height: 100%;
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
     min-height: 100%;
+    height: 100%;
 }
 
 #sticky-footer {
@@ -29,24 +29,24 @@ body {
     border-top: 8px solid #4aaaa5;
     background-color: #666666;
     display: flex;
-    position: absolute;
+    flex-shrink: 0;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 20px;
-    bottom: -100px;
+    margin-top: auto;
 }
 
 #header-container {
     background-color: white;
     width: 100%;
-    position: relative;
     height: 75px;
     justify-content: center;
     align-items: center;
     display: flex;
+    position: static;
     border-width: 0 0 2px 0;
     border-color: #cccccc;
     border-style: solid;
+    min-height: 75px;
 }
 
 #full-header-container {
@@ -121,6 +121,7 @@ body {
     border-color: #dddddd;
     border-style: solid;
     border-width: 1px;
+    margin-bottom: 20px;
 }
 
 #about-me-title, #portfolio-title, 
